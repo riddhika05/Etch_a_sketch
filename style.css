@@ -18,8 +18,7 @@ body
    display: flex;
    flex-wrap: wrap;
    max-width: 960px;
-   margin: auto;
-      
+   margin: auto;    
 }
 .comp
 {
@@ -34,4 +33,28 @@ body
     font-weight: 900;
     border-radius:25px;
     opacity: 0.9;
+    padding: 10px;
+}
+.popup
+{
+    width: 400px;
+    height: 200px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right : 10px;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 25px;
+}
+input
+{
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
 }
