@@ -1,6 +1,7 @@
 let no=prompt("squares","0")
 let sq=parseInt(no);
 const container=document.querySelector(".container");
+
 for(let i=0;i<sq*sq;i++)
 {
     const div=document.createElement("div");
@@ -10,4 +11,6 @@ for(let i=0;i<sq*sq;i++)
     div.style.height =dim+'px';
     div.style.opacity='0.4';
     container.appendChild(div);
+    div.addEventListener('click',()=>{div.style.backgroundColor="red";});
 }
+
