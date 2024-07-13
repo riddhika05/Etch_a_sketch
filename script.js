@@ -10,10 +10,9 @@ for(let i=0;i<sq*sq;i++)
     div.style.width = dim+'px';
     div.style.height =dim+'px';
     div.style.opacity='0.4';
-    container.appendChild(div);
-    div.addEventListener('click',()=>{div.style.backgroundColor="red";});
+    container.appendChild(div);  
     div.addEventListener('mouseover',()=>{div.style.backgroundColor="grey";});
-    div.addEventListener('mouseout',()=>{div.style.backgroundColor="white";});
+   
 
 }
 
