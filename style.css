@@ -21,3 +21,17 @@ body
    margin: auto;
       
 }
+.comp
+{
+    display: flex;
+}
+
+.squares{
+    margin-left: 300px;
+    width: 150px;
+    height: 100px;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius:25px;
+    opacity: 0.9;
+}

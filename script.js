@@ -1,5 +1,6 @@
-let no=prompt("squares","0")
-let sq=parseInt(no);
+let sq=16;
+let no=prompt("squares","16")
+ sq=parseInt(no);
 const container=document.querySelector(".container");
 
 for(let i=0;i<sq*sq;i++)
@@ -10,8 +11,10 @@ for(let i=0;i<sq*sq;i++)
     div.style.width = dim+'px';
     div.style.height =dim+'px';
     div.style.opacity='0.4';
-    container.appendChild(div);  
-    div.addEventListener('mouseover',()=>{div.style.backgroundColor="grey";});
+    container.appendChild(div);    
+    div.addEventListener('mouseover',()=>{ div.style.backgroundColor="grey"});
+       
+   
    
 
 }
