@@ -12,5 +12,8 @@ for(let i=0;i<sq*sq;i++)
     div.style.opacity='0.4';
     container.appendChild(div);
     div.addEventListener('click',()=>{div.style.backgroundColor="red";});
+    div.addEventListener('mouseover',()=>{div.style.backgroundColor="grey";});
+    div.addEventListener('mouseout',()=>{div.style.backgroundColor="white";});
+
 }
 
