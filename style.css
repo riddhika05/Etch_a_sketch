@@ -3,22 +3,21 @@ body
    background-image: url("Bg.avif");
    background-position: center;
    height: 500px;
+   zoom:60%;
 }
 .heading
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 920px;
   font-family:'Times New Roman', Times, serif;
   font-size: 3rem;
   font-weight: 900;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .container
 {
    display: flex;
    flex-wrap: wrap;
-   gap:5px;
-   max-width: 500px;
-   margin-left: 500px;   
+   max-width: 960px;
+   margin: auto;
+      
 }
