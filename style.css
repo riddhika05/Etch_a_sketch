@@ -65,6 +65,7 @@ input
     margin-top: 20px;
     padding: 5px;
     border-radius: 5px;
+    font-size: 25px;
 }
 #overlay
 {   opacity: 0;
