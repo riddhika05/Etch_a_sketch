@@ -26,7 +26,7 @@ body
     display: flex;
 }
 
-.squares,.color{
+.squares,.color,.Eraser{
     margin-left: 300px;
     width: 150px;
     height: 100px;
@@ -89,4 +89,7 @@ input
 {
     display: flex;
 }
-
+.Eraser{
+    margin-top: 50px;
+    top:20px;
+}
