@@ -44,8 +44,11 @@ for (let i = 0; i < sq * sq; i++) {
         div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() });
     });
     // div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() }); 
-    reset.addEventListener('click', () => { div.style.backgroundColor ="white" })
-    eraser.addEventListener('click', ()=> div.addEventListener('mouseover', () => { div.style.backgroundColor ="white";}))
+    reset.addEventListener('click', () => { div.style.backgroundColor ="white"; 
+    colorChoice.classList.remove('active')})
+    eraser.addEventListener('click', ()=> div.addEventListener('mouseover', () => { div.style.backgroundColor ="white";
+        colorChoice.classList.remove('active')
+    }))
 
 
     
