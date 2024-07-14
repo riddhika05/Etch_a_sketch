@@ -47,8 +47,9 @@ for (let i = 0; i < sq * sq; i++) {
     reset.addEventListener('click', () => { div.style.backgroundColor ="white"; 
     colorChoice.classList.remove('active')})
     eraser.addEventListener('click', ()=> div.addEventListener('mouseover', () => { div.style.backgroundColor ="white";
-        colorChoice.classList.remove('active')
+        colorChoice.classList.remove('active')        
     }))
+    sqSel.addEventListener('click', ()=>{location.reload();})
 
 
     
