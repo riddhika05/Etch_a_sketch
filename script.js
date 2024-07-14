@@ -18,7 +18,6 @@ input.addEventListener('keypress',function(event)
         console.log(inp);
         sqGen();
 })
-popup.addEventListener('mouseout',()=>{popup.style.display="none"})
 sqSel.addEventListener('click', p)
 function sqGen(){
 sq=inp;
@@ -31,7 +30,9 @@ for (let i = 0; i < sq * sq; i++) {
     div.style.height = dim + 'px';
     div.style.opacity = '0.4';
     container.appendChild(div);
+    popup.style.display="none"
     div.addEventListener('mouseover', () => { div.style.backgroundColor = "grey" });
+   
 }
 }
 // function initial()
