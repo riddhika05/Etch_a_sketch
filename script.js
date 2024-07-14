@@ -5,8 +5,10 @@ const sqSel = document.querySelector(".squares");
 const popup = document.querySelector(".popup");
 const overlay = document.querySelector("#overlay");
 const input = document.querySelector("#sqinput");
+const color=document.querySelector(".color");
 function p() {
     popup.classList.add('active');
+    color.style.display="none";
     // overlay.classList.add('active');
     input.focus();
     // input.value='';
@@ -21,6 +23,7 @@ input.addEventListener('keypress',function(event)
 sqSel.addEventListener('click', p)
 function sqGen(){
 sq=inp;
+
 console.log(sq);
 for (let i = 0; i < sq * sq; i++) {
     const div = document.createElement("div");
@@ -31,8 +34,9 @@ for (let i = 0; i < sq * sq; i++) {
     div.style.opacity = '0.4';
     container.appendChild(div);
     popup.style.display="none"
+    color.style.display="flex";
     div.addEventListener('mouseover', () => { div.style.backgroundColor = "grey" });
-   
+    
 }
 }
 // function initial()

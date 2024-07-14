@@ -26,7 +26,7 @@ body
     display: flex;
 }
 
-.squares{
+.squares,.color{
     margin-left: 300px;
     width: 150px;
     height: 100px;
@@ -54,6 +54,7 @@ body
     pointer-events: none;
     margin-left: 200px;
     margin-top: 50px;
+    
 }
 .popup.active
 {
@@ -86,6 +87,10 @@ input
 {
   text-align: left;
   padding: 5px;
+}
+.color
+{
+    margin-top: 50px;
 }
 
 
