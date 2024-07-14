@@ -1,11 +1,10 @@
 let sq ;
 let inp;
-sq=16;
-sqGen();
+const container = document.querySelector(".container");
+const sqSel = document.querySelector(".squares");
 const popup = document.querySelector(".popup");
 const overlay = document.querySelector("#overlay");
 const input = document.querySelector("#sqinput");
-
 function p() {
     popup.classList.add('active');
     // overlay.classList.add('active');
@@ -19,9 +18,7 @@ input.addEventListener('keypress',function(event)
         console.log(inp);
         sqGen();
 })
-
-const container = document.querySelector(".container");
-const sqSel = document.querySelector(".squares");
+popup.addEventListener('mouseout',()=>{popup.style.display="none"})
 sqSel.addEventListener('click', p)
 function sqGen(){
 sq=inp;
@@ -37,6 +34,19 @@ for (let i = 0; i < sq * sq; i++) {
     div.addEventListener('mouseover', () => { div.style.backgroundColor = "grey" });
 }
 }
+// function initial()
+// {
+//     for (let i = 0; i < 16*16; i++) {
+//         const div = document.createElement("div");
+//         let dim = 60;
+//         div.style.backgroundColor = 'white';
+//         div.style.width = dim + 'px';
+//         div.style.height = dim + 'px';
+//         div.style.opacity = '0.4';
+//         container.appendChild(div);
+//         div.addEventListener('mouseover', () => { div.style.backgroundColor = "grey" });
+//     }
+// }
 
 
 

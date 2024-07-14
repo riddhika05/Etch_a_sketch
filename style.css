@@ -18,7 +18,8 @@ body
    display: flex;
    flex-wrap: wrap;
    max-width: 960px;
-   margin: auto;    
+   margin: auto;
+      
 }
 .comp
 {
@@ -43,7 +44,7 @@ body
     position: fixed;
     /* transform: translate(-50%,-50%); */
     text-align: center;
-    padding-top: 100px;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right : 10px;
     font-size: 25px;
@@ -79,6 +80,11 @@ input
 {
     opacity: 1;
     pointer-events: all;
+}
+.close
+{
+  text-align: left;
+  padding: 5px;
 }
 
 
