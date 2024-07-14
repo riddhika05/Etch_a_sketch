@@ -78,5 +78,15 @@ input
 {
     margin-top: 50px;
 }
-
+.colorChoice
+{
+    display: none;
+    margin-left: 280px;
+    width: 200px;
+    height: 100px;
+}
+.colorChoice.active
+{
+    display: flex;
+}
 

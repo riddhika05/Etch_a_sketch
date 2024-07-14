@@ -5,6 +5,7 @@ const sqSel = document.querySelector(".squares");
 const popup = document.querySelector(".popup");
 const input = document.querySelector("#sqinput");
 const color=document.querySelector(".color");
+const colorChoice=document.querySelector(".colorChoice");
 function p() {
     popup.classList.add('active');
     color.style.display="none";
@@ -39,7 +40,8 @@ for (let i = 0; i < sq * sq; i++) {
 }
 function colorPick()
 {
-   color.addEventListener('click',()=>{console.log("q")}) 
+   color.addEventListener('click',()=>{ colorChoice.classList.add('active');}) 
+  
 }
 
 
