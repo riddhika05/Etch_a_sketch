@@ -26,7 +26,7 @@ body
     display: flex;
 }
 
-.squares,.color,.reset{
+.squares,.color,.reset,.eraser{
     margin-left: 300px;
     width: 150px;
     height: 100px;
@@ -92,4 +92,7 @@ input
 .reset{
     margin-top: 50px;
     top:20px;
+}
+.eraser{
+    margin-top: 50px;
 }
