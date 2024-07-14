@@ -43,6 +43,10 @@ for (let i = 0; i < sq * sq; i++) {
     color.addEventListener('click',()=>{ colorChoice.classList.add('active')});
     div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() }); 
     reset.addEventListener('click', () => { div.style.backgroundColor ="white" })
+    eraser.addEventListener('click', ()=> div.addEventListener('mouseover', () => { div.style.backgroundColor ="white"}))
+
+
+    
     }
  
 }
@@ -54,6 +58,11 @@ function colorPick()
     return Color;
     
   
+}
+function erase(div)
+{   
+    div.addEventListener('mouseover', () => { div.style.backgroundColor ="white"}); 
+
 }
 
 
