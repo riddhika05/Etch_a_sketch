@@ -40,10 +40,12 @@ for (let i = 0; i < sq * sq; i++) {
     color.style.display="flex";
     reset.style.display="block";
     eraser.style.display="block";
-    color.addEventListener('click',()=>{ colorChoice.classList.add('active')});
-    div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() }); 
+    color.addEventListener('click',()=>{ colorChoice.classList.add('active')
+        div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() });
+    });
+    // div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() }); 
     reset.addEventListener('click', () => { div.style.backgroundColor ="white" })
-    eraser.addEventListener('click', ()=> div.addEventListener('mouseover', () => { div.style.backgroundColor ="white"}))
+    eraser.addEventListener('click', ()=> div.addEventListener('mouseover', () => { div.style.backgroundColor ="white";}))
 
 
     
@@ -59,11 +61,7 @@ function colorPick()
     
   
 }
-function erase(div)
-{   
-    div.addEventListener('mouseover', () => { div.style.backgroundColor ="white"}); 
 
-}
 
 
 

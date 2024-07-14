@@ -12,6 +12,7 @@ body
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 40px;
+  left:980px
 }
 .container
 {
@@ -24,6 +25,7 @@ body
 .comp
 {
     display: flex;
+    margin-top: 50px;
 }
 
 .squares,.color,.reset,.eraser{
