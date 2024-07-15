@@ -53,6 +53,9 @@ for (let i = 0; i < sq * sq; i++) {
         colorChoice.classList.remove('active')        
     }))
     sqSel.addEventListener('click', ()=>{location.reload();})
+    Rainbow.addEventListener('click',()=>{ const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        div.addEventListener('mouseover', () => { div.style.backgroundColor ="#"+randomColor;
+    })})
 
 
     
