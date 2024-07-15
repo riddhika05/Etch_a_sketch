@@ -50,15 +50,17 @@ for (let i = 0; i < sq * sq; i++) {
         div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() });
     });
     // div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() }); 
-    reset.addEventListener('click', () => { div.style.backgroundColor ="white"; 
+    reset.addEventListener('click', () => { div.style.backgroundColor ="white"; div.style.opacity="0.4";
     colorChoice.classList.remove('active')})
     eraser.addEventListener('click', ()=> div.addEventListener('mouseover', () => { div.style.backgroundColor ="white";
+        div.style.opacity="0.4";
         colorChoice.classList.remove('active')        
     }))
     sqSel.addEventListener('click', ()=>{location.reload();})
     Rainbow.addEventListener('click',()=>{ const randomColor = Math.floor(Math.random()*16777215).toString(16);
         div.addEventListener('mouseover', () => { div.style.backgroundColor ="#"+randomColor;
     })})
+    Opa.addEventListener('click',()=>{div.addEventListener('mouseover', () => { div.style.opacity=parseFloat(div.style.opacity)+0.2})})
 
 
     
