@@ -9,12 +9,14 @@ const colorChoice=document.querySelector(".colorChoice");
 const reset=document.querySelector(".reset");
 const eraser=document.querySelector(".eraser");
 const Rainbow=document.querySelector(".Rainbow");
+const Opa=document.querySelector(".OpaInc");
 function p() {
     popup.classList.add('active');
     color.style.display="none";
   reset.style.display="none";
   eraser.style.display="none";
   Rainbow.style.display="none";
+  Opa.style.display="none";
     input.focus();
    
 }
@@ -43,6 +45,7 @@ for (let i = 0; i < sq * sq; i++) {
     reset.style.display="block";
     eraser.style.display="block";
     Rainbow.style.display="block";
+   Opa.style.display="block";
     color.addEventListener('click',()=>{ colorChoice.classList.add('active')
         div.addEventListener('mouseover', () => { div.style.backgroundColor =colorPick() });
     });
