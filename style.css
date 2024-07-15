@@ -28,7 +28,7 @@ body
     margin-top: 50px;
 }
 
-.squares,.color,.reset,.eraser{
+.squares,.color,.reset,.eraser,.Rainbow{
     margin-left: 300px;
     width: 150px;
     height: 100px;
@@ -95,6 +95,6 @@ input
     margin-top: 50px;
     top:20px;
 }
-.eraser{
+.eraser,.Rainbow{
     margin-top: 50px;
 }
